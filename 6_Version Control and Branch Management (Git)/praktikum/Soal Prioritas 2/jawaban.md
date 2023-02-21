@@ -1,4 +1,4 @@
-# Jawaban Soal Prioritas 1
+# Jawaban Soal Prioritas 2
 
 ## Buatlah branch baru pada github yang kalian buat
 ![no1](no1.jpg)
@@ -6,3 +6,14 @@ Pada gambar diatas saya telah membuat branch baru dengan perintah git branch [na
 
 ![no1_2](no1_2.jpg)
 Berikut adalah branch s6_sp2 yang terlihat pada halaman github dengan repository go_ardin-nugraha.
+
+## Lakukan Pull Request pada branch tersebut sehingga akan menambah hal baru pada branch main/master. terdapat foto terkait Pull Request
+
+![no2_1](no2_1.jpg)
+Untuk melakukan pull request branch s6_sp2 ke branch main. Langkah awal yaitu tekan Compare&pull request tombol berwarna hijau tersebut.
+
+![no2_2](no2_2.jpg)
+Kemudian akan diarahkan ke halaman seperti contoh gambar diatas, kemudian tekan tombol warna hijau create pull request.
+
+![no2_3](no2_3.jpg)
+Kemudian masuk ke bagian menu Pull request dan cari tombol hijau merge pull agar isi file yang berada pada branch s6_sp2 bisa juga terdapat pada branch main.

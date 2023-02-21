@@ -24,4 +24,5 @@ Pada gambar diatas adalah contoh apabila berhasil melakukan commit ke github den
 <li>git push origin main</li>
 </ol>
 Kemudian untuk memastikan apakah commit dan push telah berhasil, bisa dengan mengecek pada directory go_ardin-nugraha.
+
 ![no4_2](no4_2.jpg)

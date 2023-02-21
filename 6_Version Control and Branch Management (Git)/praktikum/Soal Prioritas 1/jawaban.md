@@ -15,3 +15,12 @@ Gambar diatas pada folder Version Control and Branch Management (Git) masih belu
 Pada masing-masing folder tugas, sudah saya buat folder praktikum, screenshots dan file Readme.md
 
 ## melakukan commit
+![no4_1] (no4_1.jpg)
+Pada gambar diatas adalah contoh apabila berhasil melakukan commit ke github dengan directory go_ardin-nugraha. Untuk melakukan commit atau push yaitu dengan mengetikkan perintah diantaranya :
+<ol>
+<li>git add .</li>
+<li>git commit -m "isi messagenya"</li>
+<li>git branch -M main</li>
+<li>git push origin main</li>
+</ol>
+Kemudian untuk memastikan apakah commit dan push telah berhasil, bisa dengan mengecek pada directory go_ardin-nugraha.

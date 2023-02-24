@@ -4,7 +4,7 @@
 Penggunaan dari kompleksitas waktu membuat memudahkan untuk memperkirakan waktu berjalan sebuah program. Kompleksitas bisa dilihat dari jumlah maksimum pada operasi primitif yang dapat dijalankan suatu program.
 
 ## Apa Itu Operasi Dominan ?
-![operasi dominan] (/screenshots/materi/no1.jpg)
+![operasi dominan] (https://github.com/ardin2001/go_ardin-nugraha/blob/1ef44448edcceee28b17df07fabd2707734a3556/7_Time%20Complexity%20&%20Space%20Complexity/screenshots/materi/no1.jpg)
 Pada gambar diatas, operasi pada baris ke 4 adalah dominan dan akan dijalankan n waktu. Kompleksitas mendeskripsikan dalam notasi Big-O: dalam kasus O(n) - kompleksitas linier.
 
 ## Jenis-jenis Complexcity

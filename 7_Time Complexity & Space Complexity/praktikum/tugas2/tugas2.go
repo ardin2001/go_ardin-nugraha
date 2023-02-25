@@ -19,6 +19,10 @@ func kuadrat(x, y int) int {
 	return value
 }
 func main() {
-	fmt.Println(kuadrat(2, 16))
+	fmt.Println(kuadrat(2, 3))  // 8
+	fmt.Println(kuadrat(5, 3))  // 125
+	fmt.Println(kuadrat(10, 2)) // 100
+	fmt.Println(kuadrat(2, 5))  // 32
+	fmt.Println(kuadrat(7, 3))  // 343
 
 }

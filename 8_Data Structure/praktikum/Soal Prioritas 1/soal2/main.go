@@ -4,7 +4,7 @@ import (
 	"fmt"
 )
 
-func CekData(arr []string) map[string]int {
+func Mapping(arr []string) map[string]int {
 	var container map[string]int
 	container = map[string]int{}
 	for _, data := range arr {
@@ -20,7 +20,7 @@ func CekData(arr []string) map[string]int {
 }
 
 func main() {
-	fmt.Println(CekData([]string{"asd", "qwe", "asd", "adi", "qwe", "qwe"}))
-	fmt.Println(CekData([]string{"ardin", "nugraha", "ardin"}))
-	fmt.Println(CekData([]string{}))
+	fmt.Println(Mapping([]string{"asd", "qwe", "asd", "adi", "qwe", "qwe"}))
+	fmt.Println(Mapping([]string{"asd", "qwe", "asd"}))
+	fmt.Println(Mapping([]string{}))
 }

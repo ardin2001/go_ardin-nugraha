@@ -5,8 +5,9 @@ import (
 )
 
 func Mapping(arr []string) map[string]int {
-	var container map[string]int
-	container = map[string]int{}
+	// var container map[string]int
+	// container = map[string]int{}
+	container := make(map[string]int)
 	for _, data := range arr {
 		stack := 0
 		for _, data2 := range arr {

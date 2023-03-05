@@ -46,6 +46,12 @@ func main() {
 	fmt.Print("[1] Encrypt \n[2] Decrypt \nChoose your menu? ")
 	fmt.Scan(&menu)
 
+	defer func() {
+		err := recover()
+		if err != nil {
+			fmt.Println(err)
+		}
+	}()
 	if menu == 1 {
 		fmt.Print("\nInput Student Name: ")
 		fmt.Scan(&a.name)

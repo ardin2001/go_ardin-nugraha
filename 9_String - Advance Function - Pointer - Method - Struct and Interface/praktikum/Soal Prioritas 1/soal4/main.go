@@ -17,6 +17,7 @@ func getMinMax(numbers ...*int) (min int, max int) {
 
 func main() {
 	var a1, a2, a3, a4, a5, a6, min, max int
+	fmt.Println("Masukkan nilai :")
 	fmt.Scan(&a1)
 	fmt.Scan(&a2)
 	fmt.Scan(&a3)

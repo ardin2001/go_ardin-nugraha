@@ -1,0 +1,3 @@
+ERROR 1451 (23000): Cannot delete or update a parent row: a foreign key constraint fails (`alta_online_shop`.`transaction_details`, CONSTRAINT `transaction_details_ibfk_2` FOREIGN KEY (`product_id`) REFERENCES `products` (`id`))
+
+error tersebut disebabkan karena data produk tersebut masih terpakai terhubung pada tabel lain, sehingga akan menyebabkan error

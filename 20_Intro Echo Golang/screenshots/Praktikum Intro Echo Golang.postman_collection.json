@@ -1,0 +1,327 @@
+{
+	"info": {
+		"_postman_id": "2b414f2e-2869-40a9-9a58-4bfd9e39963f",
+		"name": "Praktikum Intro Echo Golang",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19973100"
+	},
+	"item": [
+		{
+			"name": "users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/users",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "users",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8000/users",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"users"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=UTF-8"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 27 Mar 2023 22:34:41 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "299"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"error\": \"null\",\n    \"messages\": \"Success get all users\",\n    \"status\": 200,\n    \"user\": [\n        {\n            \"id\": 1,\n            \"name\": \"ardin\",\n            \"email\": \"ardin@gmail.com\",\n            \"password\": \"w78dewgdg\"\n        },\n        {\n            \"id\": 2,\n            \"name\": \"putra\",\n            \"email\": \"putra@gmail.com\",\n            \"password\": \"832hd2ygd\"\n        },\n        {\n            \"id\": 3,\n            \"name\": \"nugraha\",\n            \"email\": \"nugraha@gmail.com\",\n            \"password\": \"wdh7438fgrh\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "users",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\" : \"putra\",\r\n    \"email\" : \"putra@gmail.com\",\r\n    \"password\" : \"wedguy237823\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/users",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "users",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\" : \"haidar\",\r\n    \"email\" : \"haidar@gmail.com\",\r\n    \"password\" : \"wedguy237823\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8000/users",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"users"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=UTF-8"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 27 Mar 2023 22:36:47 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "148"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"error\": \"null\",\n    \"messages\": \"Success create User\",\n    \"status\": 200,\n    \"user\": {\n        \"id\": 4,\n        \"name\": \"haidar\",\n        \"email\": \"haidar@gmail.com\",\n        \"password\": \"wedguy237823\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "users/id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/users/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"users",
+						"1"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "users/id",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8000/users/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"users",
+								"1"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=UTF-8"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 27 Mar 2023 22:38:26 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "140"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"error\": \"null\",\n    \"messages\": \"Success get user\",\n    \"status\": 200,\n    \"user\": {\n        \"id\": 1,\n        \"name\": \"ardin\",\n        \"email\": \"ardin@gmail.com\",\n        \"password\": \"w78dewgdg\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "users/id",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"edit\",\r\n    \"email\": \"edit@gmail.com\",\r\n    \"password\": \"w78dewgdg\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/users/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"users",
+						"1"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "users/id",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"edit\",\r\n    \"email\": \"edit@gmail.com\",\r\n    \"password\": \"w78dewgdg\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8000/users/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"users",
+								"1"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=UTF-8"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 27 Mar 2023 22:39:05 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "146"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"error\": \"null\",\n    \"messages\": \"Success update User id 1\",\n    \"status\": 200,\n    \"user\": {\n        \"id\": 1,\n        \"name\": \"edit\",\n        \"email\": \"edit@gmail.com\",\n        \"password\": \"w78dewgdg\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/users/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"users",
+						"1"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8000/users/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"users",
+								"1"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=UTF-8"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 27 Mar 2023 22:52:23 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "148"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"error\": \"null\",\n    \"messages\": \"Success delete User id 1\",\n    \"status\": 200,\n    \"user\": {\n        \"id\": 1,\n        \"name\": \"ardin\",\n        \"email\": \"ardin@gmail.com\",\n        \"password\": \"w78dewgdg\"\n    }\n}"
+				}
+			]
+		}
+	]
+}

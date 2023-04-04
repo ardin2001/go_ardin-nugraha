@@ -38,7 +38,7 @@ func GetUserController(c echo.Context) error {
 
 	for _, user := range users {
 		if user.Id == userId {
-			return response.Response(c, http.StatusOK, "Success get user", users[userId-1])
+			return response.Response(c, http.StatusOK, "Success get user", user)
 		}
 	}
 
@@ -55,10 +55,11 @@ func DeleteUserController(c echo.Context) error {
 	newUsers := make([]User, 0)
 
 	for i, user := range users {
+		fmt.Println(user.Id, userId)
 		if user.Id == userId {
-			oldUser := users[userId-1]
-			newUsers = append(newUsers, users[i+1:]...)
+			oldUser := user
 			newUsers = append(newUsers, users[:i]...)
+			newUsers = append(newUsers, users[i+1:]...)
 			users = newUsers
 
 			return response.Response(c, http.StatusOK, fmt.Sprintf("Success delete User id %v", userId), oldUser)
@@ -88,7 +89,7 @@ func UpdateUserController(c echo.Context) error {
 
 			users[i] = u
 
-			return response.Response(c, http.StatusOK, fmt.Sprintf("Success update User id %v", userId), users[userId-1])
+			return response.Response(c, http.StatusOK, fmt.Sprintf("Success update User id %v", userId), users[i])
 		}
 	}
 

@@ -19,10 +19,10 @@ func InitDB() (*gorm.DB, error) {
 
 	config := Config{
 		DB_Username: "root",
-		DB_Password: "",
-		DB_Port:     "3306",
-		DB_Host:     "localhost",
-		DB_Name:     "crud_go",
+		DB_Password: "123456",
+		DB_Port:     "3307",
+		DB_Host:     "host.docker.internal",
+		DB_Name:     "gorm_crud",
 	}
 
 	connectionString := fmt.Sprintf("%s:%s@tcp(%s:%s)/%s?charset=utf8&parseTime=True&loc=Local",
